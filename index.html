@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* .div-test {
+      margin-top: 5px;
+      border: 1px solid #000;
+      padding-left: 5px;
+    } */
+    .con {
+      float: left;
+      width: 33%;
+    }
+    .con::before {
+      clear: both;
+      content: "";
+    }
+    @media (max-width > 576px) {
+      .con-2 {
+        background-color: green;
+      }
+    }
+    /* .con-2 {
+      background-color: green;
+    } */
+  </style>
+  <body>
+    <!-- <div class="div-test">thi kết thúc môn web1</div> -->
+    <div class="cha">
+      <div class="con">cột1</div>
+      <div class="con con-2">cột2</div>
+      <!-- <div class="con">cột3</div> -->
+      <div>cột4</div>
+    </div>
+  </body>
+</html>
